@@ -1,9 +1,10 @@
-# JHU03_CleaningData
-JHU03 Getting and Cleaning Data
+## JHU03_CleaningData
+# JHU03 Getting and Cleaning Data
 
-This repo contains the files produced in the Getting and Cleaning Data course. The files include:
+This repo contains the files produced in the Getting and Cleaning Data course. The files included are:
 
 README.md - This file which contains the general introduction to the repo.
+
 entireDataset.txt - File created after combining the test and training data for the X, Y and subject files. It has a dimension of 10299 observations of 564 variables.
 
 tidyDataset.txt - The dataset manufactured during the exercise. It contains the variables subject, activity, and the 66 measurements of means and standard deviations extracted from the entire dataset. It has dimensions of 180 observations of 68 variables.
