@@ -1,5 +1,5 @@
-## JHU03_CleaningData
-# JHU03 Getting and Cleaning Data
+# JHU03_CleaningData
+## JHU03 Getting and Cleaning Data
 
 This repo contains the files produced in the Getting and Cleaning Data course. The files included are:
 
