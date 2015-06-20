@@ -1,3 +1,22 @@
+There are 68 columns in tidyData.txt. Their order and names are provided below.
+
+Each of the column names provides the reader with the key features of each measurement
+
+1 subject - the number from which of the thirty volunteers the data was collected
+2 activity - the six actions that were measured: laying, sitting, standing, walking, walking_upstairs, and walking_downstairs
+
+3-68 The standardized values of the 66 measurements collected from each subject carrying out each activity. The column titles provide the information on the features that were measured. The features are subsetting in the following ways
+
+TIME or FREQUENCY domain signals.
+Acceleration signals were separated into BODY and GRAVITY components.
+Measurement were performed by ACCELEROMETER or GYROSCOPE.
+JERK was derived from the linear and angular velocities derived through time.
+MAGNITUDE was derived from the #D Euclidean distance.
+The MEAN or STD (standard deviation) was the recorded measurement.
+The X, Y, or Z component of each measurement was recorded.
+
+
+Column Titles
  1 subject 
  2 activity 
  3 time_Body_Accelerometer_mean_X 
