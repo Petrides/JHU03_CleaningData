@@ -7,7 +7,7 @@ unzip("UCI_HAR_Dataset.zip")
 ##########################################################
 ## OBJECTIVE #1: Merges the training and the test sets to create one data set.
 ## 1. Creating of the combined data frame
-## 1.a. Combining X datasets - data from accelerameter and gyroscope
+## 1.a. Combining X datasets - data from accelerometer and gyroscope
 ## Loading Data from X_train and X_test
 Xtrain<-read.table("./UCI HAR Dataset/train/X_train.txt",header=FALSE)
 Xtest<-read.table("./UCI HAR Dataset/test/X_test.txt",header=FALSE)
@@ -73,6 +73,23 @@ dfRed<-df[,c(1,3,idx+3)]
 labelsRed<-names(dfRed)
 ## 4.b. Remove parentheses
 labelsRed<-gsub("\\(|\\)","",names(dfRed))
+l## 4.a. Extracts labels from dfReduced
+labelsRed<-names(dfRed)
+## 4.b. Remove parentheses
+labelsRed<-gsub("\\(|\\)","",names(dfRed))
+## 4.c. Complete variable names
+## Convert t and f to time and frequency
+labelsRed<-gsub("tBody","time_Body",labelsRed)
+labelsRed<-gsub("tGravity","time_Gravity",labelsRed)
+labelsRed<-gsub("fBody","frequency_Body",labelsRed)
+## Convert Acc and Gyro to Accelerometer and Gyroscope
+labelsRed<-gsub("Acc","_Accelerometer",labelsRed)
+labelsRed<-gsub("Gyro","_Gyroscope",labelsRed)
+## Convert Mag to _Magnitude and Jerk to _Jerk
+labelsRed<-gsub("Mag","_Magnitude",labelsRed)
+labelsRed<-gsub("Jerk","_Jerk",labelsRed)
+## Convert hypen to underscore
+labelsRed<-gsub("-","_",labelsRed)
 ## THIS COMPLETES OBJECTIVE 4
 ###########################################################
 
